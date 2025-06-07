@@ -19,9 +19,9 @@ spec:
         image: 619071335275.dkr.ecr.ap-south-1.amazonaws.com/frontend:2
         ports:
         - containerPort: 80
-      #  env:   # <-- Fixed indentation
-       # - name: REACT_APP_API_BASE_URL
-        #  value: "http://ad2084f73b7e34376bd49ec0ea55a8bb-2099085754.us-east-1.elb.amazonaws.com"
+        env:   # <-- Fixed indentation
+        - name: REACT_APP_API_BASE_URL
+          value: "http://ac03533e620804e64a0d6f2d0fa85ca6-938324828.ap-south-1.elb.amazonaws.com"
 
 ---
 apiVersion: v1
